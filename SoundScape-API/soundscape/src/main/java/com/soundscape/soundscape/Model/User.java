@@ -15,6 +15,8 @@ public class User {
 
   private String bio;
 
+  private String email;
+
   private String city;
 
   public Integer getId() {
@@ -40,6 +42,15 @@ public class User {
   public void setBio(String bio) {
     this.bio = bio;
   }
+
+  public String getEmail() {
+    return this.email;
+  }
+
+  public void setEmail(String email) {
+    this.email = email;
+  }
+
 
   public String getCity() {
     return this.city;
