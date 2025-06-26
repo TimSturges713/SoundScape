@@ -11,9 +11,11 @@ public class User {
   @GeneratedValue(strategy=GenerationType.AUTO)
   private Integer id;
 
-  private String name;
+  private String username;
 
-  private String email;
+  private String bio;
+
+  private String city;
 
   public Integer getId() {
     return id;
@@ -23,19 +25,28 @@ public class User {
     this.id = id;
   }
 
-  public String getName() {
-    return name;
+  public String getUsername() {
+    return username;
   }
 
-  public void setName(String name) {
-    this.name = name;
+  public void setUsername(String username) {
+    this.username = username;
   }
 
-  public String getEmail() {
-    return email;
+  public String getBio() {
+    return this.bio;
   }
 
-  public void setEmail(String email) {
-    this.email = email;
+  public void setBio(String bio) {
+    this.bio = bio;
   }
+
+  public String getCity() {
+    return this.city;
+  }
+
+  public void setCity(String city) {
+    this.city = city;
+  }
+
 }
